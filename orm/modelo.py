@@ -59,7 +59,7 @@ class Actor(Base):
     id       = Column(Integer, primary_key=True, autoincrement=True)
     nombre   = Column(String(200), nullable=False)
     edad     = Column(Integer)
-    rol      = Column(String(100))
+    #rol      = Column(String(100))
     pais_id  = Column(Integer, ForeignKey('pais.id'))
     serie_id = Column(Integer, ForeignKey('serie.id'))
 
